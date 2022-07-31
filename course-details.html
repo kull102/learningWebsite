@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" class="js-color-style" href="css/colors/color-1.css">
+    <link rel="stylesheet" class="js-glass-style" href="./css/glass.css" disabled>
+
+    <title>Course Details</title>
+</head>
+
+<body>
+
+    <div class="page-loader js-page-loader">
+        <div></div>
+    </div>
+    <!--start main wrapper  -->
+    <div class="main-wrapper">
+        <!-- start header -->
+        <header class="header">
+
+            <div class="container">
+
+                <div class="header-main d-flex justify-content-between align-items-center">
+
+                    <div class="header-logo">
+                        <a href="./index.html"><span>tws</span>tudy</a>
+                    </div>
+
+                    <button type="button" class="header-hamburger-btn js-header-menu-toggler">
+                        <span></span>
+                    </button>
+
+                    <div class="header-backdrop js-header-backdrop">
+                    </div>
+
+
+                    <nav class="header-menu js-header-menu ">
+                        <button type="button" class="header-close-btn js-header-menu-toggler">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <ul class="menu">
+                            <li class="menu-item"><a href="index.html">home</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">courses <i class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="course.html">course</a></li>
+                                    <li class="sub-menu-item"><a href="course-details.html">course detail</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toggle-sub-menu">pages <i class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="log-in.html">log in</a></li>
+                                    <li class="sub-menu-item"><a href="sign-up.html">sign up</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item"><a href="contact.html">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+
+
+        <!-- start breadcrumb -->
+
+        <div class="breadcrumb-nav">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="./course.html">Courses</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Courses details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <!-- end breadcrumb -->
+
+        <!-- start course details -->
+
+        <section class="course-details section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8">
+                        <!-- start course header -->
+                        <div class="course-header box">
+                            <h2 class="text-capitalize">javascript for beginners</h2>
+                            <div class="rating">
+                                <span class="average-rating">(4.5)</span>
+                                <span class="average-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </span>
+                                <span class="average-reviews">(186 Reviews)</span>
+                            </div>
+
+                            <ul class="text-capitalize">
+                                <li>enrolled students - <span>11201</span></li>
+                                <li>created by - <span><a href="#">john doe</a></span></li>
+                                <li>last updated - <span>1/1/2022</span></li>
+                                <li>language - <span>english</span></li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- end course header -->
+
+
+
+                        <!-- start course tabs -->
+                        <nav class="courses-tab">
+                            <div class="nav nav-tabs border-0" id="nav-tab" role="tablist">
+
+
+                                <button class="nav-link active" id="course-curriculum-tab" data-bs-toggle="tab"
+                                    data-bs-target="#course-curriculum" type="button" role="tab"
+                                    aria-controls="course-curriculum" aria-selected="true">Curriculum</button>
+                                <button class="nav-link" id="course-description-tab" data-bs-toggle="tab"
+                                    data-bs-target="#course-description" type="button" role="tab"
+                                    aria-controls="course-description" aria-selected="false">description</button>
+                                <button class="nav-link" id="course-instructor-tab" data-bs-toggle="tab"
+                                    data-bs-target="#course-instructor" type="button" role="tab"
+                                    aria-controls="course-instructor" aria-selected="false">instructor</button>
+                                <button class="nav-link" id="course-reviews-tab" data-bs-toggle="tab"
+                                    data-bs-target="#course-reviews" type="button" role="tab"
+                                    aria-controls="course-reviews" aria-selected="false">reviews</button>
+                            </div>
+                        </nav>
+
+                        <!-- end course tabs -->
+
+
+                        <!-- start tab panes -->
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- start course curriculum -->
+                            <div class="tab-pane fade show active" id="course-curriculum" role="tabpanel"
+                                aria-labelledby="course-curriculum-tab" tabindex="0">
+                                <div class="course-curriculum box">
+                                    <h3 class="text-capitalize mb-4">course curriculum</h3>
+
+                                    <!-- start Accordion -->
+                                    <div class="accordion" id="accordion">
+
+                                        <!-- start accordion item -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-1">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapse-1" aria-expanded="true"
+                                                    aria-controls="collapse-1">
+                                                    language basics <span>2 lessons | 40 mins</span>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-1" class="accordion-collapse collapse show"
+                                                aria-labelledby="heading-1" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Lexical structure
+                                                            <span>15:00</span>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Values
+                                                            <span>15:00</span>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Types
+                                                            <span>15:00</span>
+                                                        </li>
+
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Variables
+                                                            <span>15:00</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- end accordion item -->
+
+
+                                        <!-- start accordion item -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-2">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-2"
+                                                    aria-expanded="false" aria-controls="collapse-2">
+                                                    types<span>2 lessons | 40 mins</span>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-2" class="accordion-collapse collapse"
+                                                aria-labelledby="heading-2" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            String
+                                                            <span>15:00</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Boolean
+                                                            <span>15:00</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Null and undefined
+                                                            <span>15:00</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- end accordion item -->
+
+
+                                        <!-- start accordion item -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-3">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-3"
+                                                    aria-expanded="false" aria-controls="collapse-3">
+                                                    control structure<span>2 lessons | 40 mins</span>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-3" class="accordion-collapse collapse"
+                                                aria-labelledby="heading-3" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            If / else
+                                                            <span>15:00</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Switch case
+                                                            <span>15:00</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Loops
+                                                            <span>15:00</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- end accordion item -->
+
+
+                                        <!-- start accordion item -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading-4">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-4"
+                                                    aria-expanded="false" aria-controls="collapse-4">
+                                                    functions<span>2 lessons | 40 mins</span>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse-4" class="accordion-collapse collapse"
+                                                aria-labelledby="heading-4" data-bs-parent="#accordion">
+                                                <div class="accordion-body">
+                                                    <ul>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Arrow function
+                                                            <span>15:00</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Return value
+                                                            <span>15:00</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Parameters
+                                                            <span>15:00</span>
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-play-circle"></i>
+                                                            Recursion
+                                                            <span>15:00</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- end accordion item -->
+
+
+                                    </div>
+                                    <!-- end Accordion -->
+
+                                </div>
+                            </div>
+                            <!-- end course curriculum -->
+
+
+                            <!-- start course description -->
+
+                            <div class="tab-pane fade " id="course-description" role="tabpanel"
+                                aria-labelledby="course-description-tab" tabindex="0">
+                                <div class="course-description box">
+                                    <h3>Description</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur harum,
+                                        doloremque suscipit pariatur numquam culpa eveniet aliquam, repellat voluptas
+                                        expedita accusantium quod? Repudiandae commodi modi quisquam ullam ad adipisci!
+                                        Sequi.</p>
+                                    <h4>For who is this course designed ?</h4>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quidem
+                                        exercitationem accusamus voluptates molestiae sint voluptatem deleniti explicabo
+                                        accusantium. Autem quas quod iste cum excepturi dignissimos necessitatibus
+                                        dolorum, veniam qui.</p>
+
+                                    <h4>Why should you take this course?</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis mollitia nobis
+                                        obcaecati, provident sed consectetur vero, culpa temporibus, harum distinctio
+                                        totam. Debitis mollitia eaque error alias? Ea dolores libero nesciunt.</p>
+                                </div>
+                            </div>
+
+                            <!-- end course description -->
+
+                            <!-- start course instructor -->
+
+                            <div class="tab-pane fade " id="course-instructor" role="tabpanel"
+                                aria-labelledby="course-instructor-tab" tabindex="0">
+                                <div class="course-instructor box">
+                                    <h3 class="mb-3">Instructor</h3>
+                                    <div class="instructor-details">
+                                        <div class="details-wrap d-flex align-items-center flex-wrap">
+                                            <div class="left-box me-4">
+                                                <div class="img-box">
+                                                    <img src="./img/instructor/1.png" class="rounded-circle"
+                                                        alt="instructor">
+                                                </div>
+                                            </div>
+                                            <div class="right-box">
+                                                <h4>john doe <span>(web developer)</span></h4>
+                                                <ul>
+                                                    <li>
+                                                        <i class="fas fa-star"></i> 4.5 ranting
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-play-circle"></i> 20 courses
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-certificate"></i> 500+ reviews
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p class="mb-0">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi ad id
+                                                alias optio nam numquam neque facilis quae. Ab veritatis eligendi
+                                                impedit ipsa officiis molestiae necessitatibus laudantium nostrum illo
+                                                quas.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- end course instructor -->
+
+                            <!-- start course reviews -->
+
+                            <div class="tab-pane fade " id="course-reviews" role="tabpanel"
+                                aria-labelledby="course-reviews-tab" tabindex="0">
+                                <div class="course-reviews box">
+                                    <!-- start rating summary -->
+                                    <div class="rating-summary">
+                                        <h3 class="mb-4 text-capitalize">students feedback</h3>
+                                        <div class="row">
+                                            <div
+                                                class="col-md-4 d-flex justify-content-center text-center align-items-center">
+                                                <div class="rating-box">
+                                                    <div class="average-rating">4.5</div>
+                                                    <div class="average-stars">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star-half-alt"></i>
+                                                    </div>
+                                                    <div class="reivews">250 Reviews</div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-8">
+                                                <div class="rating-bas">
+
+                                                    <!-- start rating bars item -->
+                                                    <div class="rating-bars-item">
+                                                        <div class="star-text">5 star</div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width:50%; "></div>
+                                                        </div>
+                                                        <div class="percent">50%</div>
+                                                    </div>
+
+                                                    <!-- end rating bars item -->
+
+                                                    <!-- start rating bars item -->
+                                                    <div class="rating-bars-item">
+                                                        <div class="star-text">4 star</div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width:30%; "></div>
+                                                        </div>
+                                                        <div class="percent">30%</div>
+                                                    </div>
+
+                                                    <!-- end rating bars item -->
+
+                                                    <!-- start rating bars item -->
+                                                    <div class="rating-bars-item">
+                                                        <div class="star-text">3 star</div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width:10%; "></div>
+                                                        </div>
+                                                        <div class="percent">10%</div>
+                                                    </div>
+
+                                                    <!-- end rating bars item -->
+
+
+                                                    <!-- start rating bars item -->
+                                                    <div class="rating-bars-item">
+                                                        <div class="star-text">2 star</div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width:7%; "></div>
+                                                        </div>
+                                                        <div class="percent">7%</div>
+                                                    </div>
+
+                                                    <!-- end rating bars item -->
+
+                                                    <!-- start rating bars item -->
+                                                    <div class="rating-bars-item">
+                                                        <div class="star-text">1 star</div>
+                                                        <div class="progress">
+                                                            <div class="progress-bar" style="width:3%; "></div>
+                                                        </div>
+                                                        <div class="percent">3%</div>
+                                                    </div>
+
+                                                    <!-- end rating bars item -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end rating summary -->
+
+
+                                    <!-- start reviews filter -->
+                                    <div class="reviews-filter">
+                                        <h3 class="mb-4">Reviews</h3>
+
+                                        <form action="#">
+                                            <div class="form-group">
+                                                <i class="fas fa-chevron-down select-icon"></i>
+                                                <select class="form-control">
+                                                    <option value="All">All reviews</option>
+                                                    <option value="1 Star">1 Star</option>
+                                                    <option value="2 Star">2 Star</option>
+                                                    <option value="3 Star">3 Star</option>
+                                                    <option value="4 Star">4 Star</option>
+                                                    <option value="5 Star">5 Star</option>
+
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- end reviews filter -->
+
+
+                                    <!-- start reviews list -->
+                                    <div class="reviews-list">
+
+                                        <!-- start review list item -->
+                                        <div class="reviews-item">
+                                            <div class="img-box">
+                                                <img src="./img/review/1.png" alt="review img">
+
+                                            </div>
+                                            <h4>No Name</h4>
+                                            <div class="stars-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span class="date">3 months ago</span>
+                                                <p>I learnt a lot of things about JS in this course. Thanks!!!!</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- end review list item -->
+
+
+                                        <!-- start review list item -->
+                                        <div class="reviews-item">
+                                            <div class="img-box">
+                                                <img src="./img/review/1.png" alt="review img">
+
+                                            </div>
+                                            <h4>No Name</h4>
+                                            <div class="stars-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span class="date">3 months ago</span>
+                                                <p>I learnt a lot of things about JS in this course. Thanks!!!!</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- end review list item -->
+
+                                        <!-- start review list item -->
+                                        <div class="reviews-item">
+                                            <div class="img-box">
+                                                <img src="./img/review/1.png" alt="review img">
+
+                                            </div>
+                                            <h4>No Name</h4>
+                                            <div class="stars-rating">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <span class="date">3 months ago</span>
+                                                <p>I learnt a lot of things about JS in this course. Thanks!!!!</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- end review list item -->
+
+
+                                    </div>
+                                    <!-- end reviews list -->
+
+                                    <button class="btn btn-theme">More Reviews</button>
+                                </div>
+                            </div>
+
+                            <!-- end course reviews -->
+
+                        </div>
+                        <!-- end tab panes -->
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <!-- start course sidebar -->
+                        <div class="course-sidebar box ">
+
+                            <div class="img-box position-relative " data-bs-toggle="modal"
+                                data-bs-target="#video-modal">
+                                <img src="./img/courses/web-development/3.jpg" class="w-100" alt="course img">
+                                <div class="play-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <p class="text-center">Course Preview</p>
+                            </div>
+                            <div class="price d-flex align-items-center mb-3">
+                                <span class="price-old text-decoration-line-through">$100</span>
+                                <span class="price-new">$49</span>
+                                <span class="price-discount">50% Off</span>
+
+                            </div>
+                            <h3 class="mb-3">Course Features</h3>
+                            <ul class="features-list">
+                                <li>Total 15 lessons</li>
+                                <li>Other feature</li>
+                                <li>Other feature</li>
+                                <li>Other feature</li>
+                            </ul>
+
+                            <div class="btn-wrap">
+                                <button class="btn btn-theme btn-block">enroll now</button>
+                            </div>
+                        </div>
+
+                        <!-- end course sidebar -->
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- end course details -->
+
+
+
+
+        <!-- start footer -->
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3 class="footer-logo"><span>tws</span>tudy</h3>
+                                <ul>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">what we offer</a></li>
+                                    <li><a href="#">careers</a></li>
+                                    <li><a href="#">certificates</a></li>
+                                    <li><a href="#">blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>learning</h3>
+                                <ul>
+                                    <li><a href="#">get the app</a></li>
+                                    <li><a href="#">testimonials</a></li>
+                                    <li><a href="#">pricing</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>more</h3>
+                                <ul>
+                                    <li><a href="#">affiliates</a></li>
+                                    <li><a href="#">become a course creater</a></li>
+                                    <li><a href="#">training webinars</a></li>
+                                    <li><a href="#">free personality test</a></li>
+                                    <li><a href="#">help and support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-item">
+                                <h3>get in touch</h3>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-facebook social-icon"></i> facebook</a></li>
+                                    <li><a href="#"><i class="fab fa-twitter social-icon"></i> twitter</a></li>
+                                    <li><a href="#"><i class="fab fa-instagram social-icon"></i> instagram</a></li>
+                                    <li><a href="#"><i class="fab fa-youtube social-icon"></i> youtube</a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin social-icon"></i> linkedin</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row text-center">
+                        <p class="m-0 py-4">Copyright &copy;2022 NoName</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+
+
+
+    </div>
+    <!--end main wrapper  -->
+
+    <!-- start course preview modal -->
+
+    <div class="modal fade video-modal js-course-preview-modal" id="video-modal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body p-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="ratio ratio-16x9">
+                        <video controls class="js-course-preview-video">
+                            <source src="./video/course-preview.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end course preview modal -->
+
+    <!-- start style switcher -->
+    <div class="style-switcher js-style-switcher">
+        <div class="style-switcher-toggler js-style-switcher-toggler">
+            <i class="fas fa-cog"></i>
+        </div>
+        <h3>Style Switcher</h3>
+
+        <div class="style-switcher-item">
+            <!-- theme colors -->
+            <p class="mb-2">Theme Colors</p>
+            <div class="theme-colors js-theme-colors">
+                <button class="js-theme-color-item color-1" data-js-theme-color="color-1"></button>
+
+
+                <button class="js-theme-color-item color-2" data-js-theme-color="color-2"></button>
+
+                <button class="js-theme-color-item color-3" data-js-theme-color="color-3"></button>
+
+                <button class="js-theme-color-item color-4" data-js-theme-color="color-4"></button>
+
+
+                <button class="js-theme-color-item color-5" data-js-theme-color="color-5"></button>
+            </div>
+
+        </div>
+        <div class="style-switcher-item">
+
+            <div class="form-check form-switch">
+                <input class="form-check-input js-dark-mode" type="checkbox" role="switch" id="dark-mode">
+                <label class="form-check-label" for="dark-mode">Dark Mode</label>
+            </div>
+
+        </div>
+        <div class="style-switcher-item">
+
+            <div class="form-check form-switch">
+                <input class="form-check-input js-glass-effect" type="checkbox" role="switch" id="glass-effect">
+                <label class="form-check-label" for="glass-effect">Glass Effect</label>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end style switcher -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
