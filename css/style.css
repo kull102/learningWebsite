@@ -19,21 +19,7 @@
 }
 
 
-html::-webkit-scrollbar {
-    width: 10px;
-}
 
-html::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-
-
-html::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-    border-radius: 100vw;
-    border: 3px solid var(--body-bg-color);
-}
 
 
 /* overrides variables for - theme dark */
@@ -49,6 +35,22 @@ body.t-dark {
     --border-color-1: hsl(240, 9%, , 30%);
 
 
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--WHITE);
+}
+
+
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+    border-radius: 5px;
+    border: 3px solid var(--WHITE);
 }
 
 /* base */
