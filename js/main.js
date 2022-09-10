@@ -23,7 +23,7 @@ function testimonials() {
         })
     }
 }
-
+testimonials()
 
 // course preview video
 function coursePreviewVideo() {
